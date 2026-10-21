@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #1e1e2f;
+    color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #7c5cff;
+}
+
+/* Lista de jogos */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+    background-color: #2a2a40;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.8rem 1rem;
+    text-align: left;
+}
+
+th {
+    background-color: #7c5cff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #33334d;
+}
+
+/* Formulário de cadastro */
+form {
+    max-width: 400px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: #2a2a40;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #1e1e2f;
+    color: #f1f1f1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7c5cff;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #7c5cff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6444e0;
+}
+
+/* Links */
+a {
+    color: #9d86ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
