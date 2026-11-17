@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -5,7 +6,7 @@
 body {
     margin: 0;
     padding: 2rem;
-    background-color: #1e1e2f;
+    background: #1e1e2f;
     color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,13 +16,13 @@ h1, h2 {
     color: #7c5cff;
 }
 
-/* Lista de jogos */
+/* Tabela */
 table {
     width: 100%;
     max-width: 800px;
     margin: 1.5rem auto;
     border-collapse: collapse;
-    background-color: #2a2a40;
+    background: #2a2a40;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -32,20 +33,20 @@ th, td {
 }
 
 th {
-    background-color: #7c5cff;
+    background: #7c5cff;
     color: #fff;
 }
 
 tr:nth-child(even) {
-    background-color: #33334d;
+    background: #33334d;
 }
 
-/* Formulário de cadastro */
+/* Formulários */
 form {
     max-width: 400px;
     margin: 1.5rem auto;
     padding: 1.5rem;
-    background-color: #2a2a40;
+    background: #2a2a40;
     border-radius: 8px;
 }
 
@@ -60,7 +61,7 @@ input {
     margin-bottom: 1rem;
     border: 1px solid #555;
     border-radius: 4px;
-    background-color: #1e1e2f;
+    background: #1e1e2f;
     color: #f1f1f1;
 }
 
@@ -69,19 +70,50 @@ input:focus {
     border-color: #7c5cff;
 }
 
-button {
-    width: 100%;
-    padding: 0.7rem;
+/* Botões */
+button, .botao {
     border: none;
-    border-radius: 4px;
-    background-color: #7c5cff;
+    border-radius: 5px;
+    background: #7c5cff;
     color: #fff;
     font-size: 1rem;
+    text-decoration: none;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #6444e0;
+button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+}
+
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 42px;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+button:hover, .botao:hover {
+    background: #6444e0;
+    text-decoration: none;
+}
+
+/* Alinhamento dos botões */
+.acoes-formulario, .acoes-lista {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acoes-formulario button {
+    width: auto;
+    min-width: 120px;
+    min-height: 42px;
+    margin: 0;
 }
 
 /* Links */
@@ -92,18 +124,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.botao:hover {
-    background-color: #0056b3;
 }
