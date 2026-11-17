@@ -66,3 +66,16 @@ td {
     margin-left: 1em;
     margin-bottom: 1em;
 }
+
+.img-thumbnail {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
